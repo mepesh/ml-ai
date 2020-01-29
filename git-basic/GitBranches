@@ -1,0 +1,5 @@
+#List all branches 
+git branch
+
+#shows the differnce in two differnt branches
+git diff branch1..branch2
