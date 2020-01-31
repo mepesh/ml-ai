@@ -1,0 +1,26 @@
+#condition - 1
+yearc = df['year']==1998
+year1998 = df.loc[yearc]
+
+#condition -2
+numc = df['number'] == 0
+numzero = df.loc[numc]
+
+# single line condition filter
+df.loc[df['year']==1998]
+df.loc[df['year']>2010]
+
+#other conditional operator
+df[df.year > 2010]
+df[df['number'] == 0]
+df[(df['state']=='Alagoas')]
+
+#multiple conditons
+# df[(condition1) | (condition2)]
+
+#multiple conditions - or
+df[(df['number'] ==1) | (df['year']>2000)]
+
+#multiple conditions - and
+df[(df['month'] == "Janeiro") &  (df['number'] >100)]
+print(df)

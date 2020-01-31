@@ -1,5 +1,46 @@
 #List all branches 
 git branch
 
+#switching to anpther branch
+git checkout secondbranch
+
 #shows the differnce in two differnt branches
 git diff branch1..branch2
+
+#checkout and create new branch, copies original master
+git checkout -b new-branch
+
+#merging two branches
+git merge branch1 master 
+#opens up a console for giving merge message
+
+#creat a new repository
+git init newrepo
+
+#any project to git project 
+git init
+
+#create a copy of an existing repository
+git clone URL
+
+#from local repo
+git clone /document/ml-ai/project1 project
+
+#find the origins
+git remote
+git remote -v
+
+#pull changes from other branches ** confused
+git pull origin master
+
+#abroat the changes local
+git checkout -- .
+
+#pull before push 
+git pull repo-name branch-name
+git pull origin master
+
+git push repo-name branch-name
+#push changes to the repo
+git push origin master
+
